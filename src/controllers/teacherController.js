@@ -22,7 +22,6 @@ export const getCommonStudents = async (req, res) => {
 
   if (!teachers) return res.status(400).json({ message: "Missing teacher(s)" });
 
-  // normalize into array
   if (!Array.isArray(teachers)) teachers = [teachers];
 
   try {
