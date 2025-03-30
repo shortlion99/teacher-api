@@ -1,6 +1,3 @@
-CREATE DATABASE IF NOT EXISTS teacher_student_db;
-USE teacher_student_db;
-
 CREATE TABLE IF NOT EXISTS teachers (
   email VARCHAR(255) PRIMARY KEY
 );
