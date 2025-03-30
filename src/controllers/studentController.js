@@ -12,7 +12,7 @@ export const suspendStudent = async (req, res) => {
     res.sendStatus(204);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Server error" });
+    return res.status(500).json({ message: err.message });
   }
 };
 
@@ -31,6 +31,6 @@ export const getNotificationRecipients = async (req, res) => {
     res.status(200).json({ recipients });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Server error" });
+    return res.status(500).json({ message: err.message });
   }
 };
