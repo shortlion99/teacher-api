@@ -1,0 +1,26 @@
+{
+  "name": "teacher-api",
+  "version": "1.0.0",
+  "description": "Teacher Student Registration API",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "test": "vitest"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.0",
+    "prettier": "^3.5.3",
+    "vitest": "^3.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
